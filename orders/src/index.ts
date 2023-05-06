@@ -7,6 +7,7 @@ import { ExpirationCompleteListener } from './events/listeners/expirationComplet
 import { PaymentCreatedListener } from './events/listeners/paymentCreatedListener';
 
 const start = async () => {
+    console.log('starting up orders.......')
     try {
         const getEnvironment = process.env.NODE_ENV?.includes('localhost');
         if (getEnvironment) {
