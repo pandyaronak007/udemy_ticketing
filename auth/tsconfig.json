@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "resolveJsonModule": true,
+    "target": "es6",
+    "outDir": "./authBuild",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "module": "commonjs",
+    "allowJs": true,
+    "removeComments": false,
+    "watch": false,
+    "sourceMap": true,
+    "typeRoots": ["./types", "./node_modules/@types"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.json", "src/**/*.js", "*.json", "*.js"],
+  "exclude": ["package-lock.json"]
+}
