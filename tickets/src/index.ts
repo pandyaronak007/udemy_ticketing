@@ -5,6 +5,7 @@ import { OrderCancelledListener } from './events/listeners/orderCancelledListene
 import { OrderCreatedListener } from './events/listeners/orderCreateListener';
 
 const start = async () => {
+    console.log('starting test cases')
     try {
         const getEnvironment = process.env.NODE_ENV?.includes('localhost');
         if (getEnvironment) {
