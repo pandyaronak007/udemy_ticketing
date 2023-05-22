@@ -16,5 +16,5 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      - run: cd auth && docker build -t auth . --tag pandyaronak007/auth:latest
+      - run: cd auth && docker build -t auth:latest pandyaronak007/auth:latest
       - run: docker push pandyaronak007/auth:latest
