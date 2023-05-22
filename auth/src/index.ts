@@ -19,7 +19,7 @@ const start = async () => {
             // for inside docker name if we push code in docker
             // await mongoose.connect('mongodb://mongoLocal:27017/auth')
         }
-        console.log('Connected to MongoDb')
+        console.log('Connected to MongoDb auth')
     } catch (error) {
         console.error('error', error)
     }
