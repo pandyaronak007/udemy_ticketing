@@ -15,7 +15,10 @@ spec:
       containers:
         - name: auth
           # image: us.gcr.io/ticketing-dev-382114/auth
-          image: auth
+          # for digital ocean below code will work
+          image: pandyaronak007/auth:latest
+          # for local below code will work
+          # image: auth
           # imagePullPolicy: Never
           env:
             - name: MONGO_URI

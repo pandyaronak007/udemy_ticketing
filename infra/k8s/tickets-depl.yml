@@ -14,7 +14,10 @@ spec:
     spec:
       containers:
         - name: tickets
-          image: tickets
+          # for digital ocean below code will work
+          image: pandyaronak007/tickets:latest
+          # for local below code will work
+          # image: tickets
           # imagePullPolicy: Never
           env:
             - name: NATS_CLIENT_ID

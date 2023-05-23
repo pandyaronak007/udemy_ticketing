@@ -14,7 +14,10 @@ spec:
     spec:
       containers:
         - name: orders
-          image: orders
+          # for digital ocean below code will work
+          image: pandyaronak007/orders:latest
+          # for local below code will work
+          # image: orders
           # imagePullPolicy: Never
           env:
             - name: NATS_CLIENT_ID
