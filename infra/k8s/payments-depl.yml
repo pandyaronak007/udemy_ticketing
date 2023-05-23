@@ -14,8 +14,11 @@ spec:
     spec:
       containers:
         - name: payments
-          image: payments
-          imagePullPolicy: Never
+          # for digital ocean below code will work
+          image: pandyaronak007/payments:latest
+          # for local below code will work
+          # image: payments
+          # imagePullPolicy: Never
           env:
             - name: NATS_CLIENT_ID
               valueFrom:

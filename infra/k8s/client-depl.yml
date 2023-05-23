@@ -15,8 +15,11 @@ spec:
       containers:
         - name: client
           # image: us.gcr.io/ticketing-dev-382114/client
-          image: client
-          imagePullPolicy: Never
+          # for digital ocean below code will work
+          image: pandyaronak007/client:latest
+          # for local below code will work
+          # image: client
+          # imagePullPolicy: Never
 ---
 apiVersion: v1
 kind: Service

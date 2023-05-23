@@ -14,8 +14,11 @@ spec:
     spec:
       containers:
         - name: expiration
-          image: expiration
-          imagePullPolicy: Never
+          # for digital ocean below code will work
+          image: pandyaronak007/expiration:latest
+          # for local below code will work
+          # image: expiration
+          # imagePullPolicy: Never
           env:
             - name: NATS_CLIENT_ID
               valueFrom:
