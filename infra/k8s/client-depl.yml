@@ -16,7 +16,7 @@ spec:
         - name: client
           # image: us.gcr.io/ticketing-dev-382114/client
           image: client
-          imagePullPolicy: Never
+          # imagePullPolicy: Never
 ---
 apiVersion: v1
 kind: Service
