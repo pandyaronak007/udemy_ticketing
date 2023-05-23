@@ -33,3 +33,15 @@ jobs:
           context: ./auth
           push: true
           tags: pandyaronak007/auth:latest
+      -
+        name: Digital Ocean details
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DOCTL_ACCESS_TOKEN }}
+      - 
+        name: Save DigitalOcean kubeconfig with short-lived credentials
+        run: doctl kubernetes cluster kubeconfig save ticketing
+
+      - 
+        name: Verify deployment
+        run: kubectl rollout status deployment auth-depl
