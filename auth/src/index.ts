@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { app } from './app'
 
 const start = async () => {
-    console.log('starting up..........')
+    console.log('starting up........')
     try {
         const getEnvironment = process.env.NODE_ENV?.includes('localhost');
         if (getEnvironment) {
